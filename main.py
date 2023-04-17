@@ -7,14 +7,3 @@ class RadiusVector:
     
     def __setitem__(self, key, value):
         self.coords[key] = value
-    
-
-def injk(kj):
-    print('a')
-
-v = RadiusVector(1, 1, 1, 1)
-print(v[1]) # 1
-v[:] = 1, 2, 3, 4
-print(v[2]) # 3
-print(v[1:]) # (2, 3, 4)
-v[0] = 10.5
